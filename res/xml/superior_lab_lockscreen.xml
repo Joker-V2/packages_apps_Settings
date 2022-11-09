@@ -18,12 +18,22 @@
     android:title="@string/lockscreen_title"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
+    <PreferenceCategory
+        android:title="@string/general_category">
+
     <!-- Fingerprint unlock ripple animation -->
     <com.superior.support.preferences.SystemSettingSwitchPreference
         android:key="enable_ripple_effect"
         android:title="@string/lock_screen_fingerprint_ripple_title"
         android:summary="@string/lock_screen_fingerprint_ripple_summary"
         android:defaultValue="true" />
+
+    <com.superior.support.preferences.SystemSettingSwitchPreference
+        android:key="lockscreen_enable_power_menu"
+        android:title="@string/lockscreen_enable_power_menu_title"
+        android:summary="@string/lockscreen_enable_power_menu_summary"
+        android:defaultValue="true" />
+    </PreferenceCategory>
 
   <PreferenceCategory
         android:key="lock_screen_interface_category"
