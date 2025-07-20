@@ -63,5 +63,12 @@
             android:min="0"
             android:defaultValue="200"
             android:dependency="ls_media_art_enabled" />
+
+        <!-- Pulse music visualizer -->
+        <Preference
+            android:key="pulse_settings"
+            android:title="@string/pulse_settings_title"
+            android:summary="@string/pulse_settings_summary"
+            android:fragment="com.superior.lab.fragments.PulseSettings" />
     </PreferenceCategory>
 </PreferenceScreen>
