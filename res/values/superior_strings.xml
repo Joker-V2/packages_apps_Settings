@@ -87,4 +87,8 @@
         limits for all applications. Normally, special applications are replaced with black areas in
         records. This can be convenient in some cases but may lead to privacy leaks. After changing
         this toggle, you may need to restart applications for the change to take effect.</string>
+
+    <!-- Pif Data -->
+    <string name="pif_data_title">Select PIF JSON to spoof</string>
+    <string name="pif_data_summary">Select PIF JSON used for prop attestation spoofing for google mobile services. Click the delete button in order to reset the PIF data props and use dynamic PIF props which are used by default.</string>
 </resources>

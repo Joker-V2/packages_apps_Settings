@@ -24,6 +24,12 @@
         android:summary="@string/keybox_data_summary"
         android:defaultValue=""/>
 
+    <com.superior.lab.fragments.PifDataPreference
+        android:key="pif_data_setting"
+        android:title="@string/pif_data_title"
+        android:summary="@string/pif_data_summary"
+        android:defaultValue=""/>
+
     <!-- Ignore Secure Window -->
     <com.superior.support.preferences.SecureSettingSwitchPreference
         android:key="window_ignore_secure"
