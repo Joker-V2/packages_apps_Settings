@@ -28,6 +28,12 @@
         android:summary="@string/lock_screen_fingerprint_ripple_summary"
         android:defaultValue="true" />
 
+    <com.superior.support.preferences.SecureSettingSwitchPreference
+        android:key="enable_lockscreen_quick_settings"
+        android:title="@string/lockscreen_quick_setting_title"
+        android:summary="@string/lockscreen_quick_setting_summary"
+        android:defaultValue="true" />
+
     <com.superior.support.preferences.SystemSettingSwitchPreference
         android:key="lockscreen_enable_power_menu"
         android:title="@string/lockscreen_enable_power_menu_title"
