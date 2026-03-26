@@ -31,6 +31,12 @@
               <intent android:action="com.android.settings.action.STATUS_BAR_TUNER"/>
           </Preference>
 
+          <Preference
+               android:fragment="com.superior.lab.fragments.NetworkTrafficSettings"
+               android:key="network_traffic_settings"
+               android:title="@string/network_traffic_settings_title"
+               android:summary="@string/network_traffic_settings_summary" />
+
      </PreferenceCategory>
 
     <PreferenceCategory
@@ -44,11 +50,6 @@
             android:entryValues="@array/status_bar_quick_qs_pulldown_values"
             android:defaultValue="0" />
 
-    <Preference
-        android:fragment="com.superior.lab.fragments.NetworkTrafficSettings"
-        android:key="network_traffic_settings"
-        android:title="@string/network_traffic_settings_title"
-        android:summary="@string/network_traffic_settings_summary" />
     </PreferenceCategory>
 
     <PreferenceCategory
