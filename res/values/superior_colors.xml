@@ -14,10 +14,7 @@
      See the License for the specific language governing permissions and
      limitations under the License.
 -->
-<resources
-    xmlns:androidprv="http://schemas.android.com/apk/prv/res/android">
-
-     <!-- Dashboard/homepage icon background colors -->
-     <color name="homepage_subicon_bg">#000000</color>
-
+<resources xmlns:androidprv="http://schemas.android.com/apk/prv/res/android">
+  <!-- Dashboard/homepage icon background colors -->
+  <color name="homepage_subicon_bg">#000000</color>
 </resources>

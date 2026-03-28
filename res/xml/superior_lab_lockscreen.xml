@@ -13,78 +13,20 @@
      See the License for the specific language governing permissions and
      limitations under the License.
 -->
-<PreferenceScreen
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    android:title="@string/lockscreen_title"
-    xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
-
-    <PreferenceCategory
-        android:title="@string/general_category">
-
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" xmlns:settings="http://schemas.android.com/apk/res/com.android.settings" android:title="@string/lockscreen_title">
+  <PreferenceCategory android:title="@string/general_category">
     <!-- Fingerprint unlock ripple animation -->
-    <com.superior.support.preferences.SystemSettingSwitchPreference
-        android:key="enable_ripple_effect"
-        android:title="@string/lock_screen_fingerprint_ripple_title"
-        android:summary="@string/lock_screen_fingerprint_ripple_summary"
-        android:defaultValue="true" />
-
-    <com.superior.support.preferences.SecureSettingSwitchPreference
-        android:key="enable_lockscreen_quick_settings"
-        android:title="@string/lockscreen_quick_setting_title"
-        android:summary="@string/lockscreen_quick_setting_summary"
-        android:defaultValue="true" />
-
-    <com.superior.support.preferences.SystemSettingSwitchPreference
-        android:key="lockscreen_enable_power_menu"
-        android:title="@string/lockscreen_enable_power_menu_title"
-        android:summary="@string/lockscreen_enable_power_menu_summary"
-        android:defaultValue="true" />
-    </PreferenceCategory>
-
-  <PreferenceCategory
-        android:key="lock_screen_interface_category"
-        android:title="@string/lock_screen_interface_category">
-
-        <!-- Lockscreen media art -->
-        <com.superior.support.preferences.SystemSettingSwitchPreference
-            android:key="ls_media_art_enabled"
-            android:title="@string/ls_media_art_title"
-            android:summary="@string/ls_media_art_summary"
-            android:defaultValue="false" />
-
-        <com.superior.support.preferences.SystemSettingListPreference
-            android:key="ls_media_art_filter"
-            android:title="@string/ls_media_art_filter_title"
-            android:entries="@array/ls_media_art_filter_entries"
-            android:entryValues="@array/ls_media_art_filter_values"
-            android:dependency="ls_media_art_enabled"
-            android:defaultValue="0" />
-
-        <com.superior.support.preferences.SystemSettingSeekBarPreference
-            android:key="ls_media_art_fade_level"
-            android:title="@string/ls_media_art_fade_level_title"
-            android:summary="@string/ls_media_art_fade_level_summary"
-            android:defaultValue="40"
-            settings:interval="1"
-            settings:units="%"
-            android:max="100"
-            android:min="0"
-            android:dependency="ls_media_art_enabled" />
-
-        <com.superior.support.preferences.SystemSettingSeekBarPreference
-            android:key="ls_media_art_blur_level"
-            android:title="@string/ls_media_art_blur_level_title"
-            android:summary="@string/ls_media_art_blur_level_summary"
-            android:max="600"
-            android:min="0"
-            android:defaultValue="200"
-            android:dependency="ls_media_art_enabled" />
-
-        <!-- Pulse music visualizer -->
-        <Preference
-            android:key="pulse_settings"
-            android:title="@string/pulse_settings_title"
-            android:summary="@string/pulse_settings_summary"
-            android:fragment="com.superior.lab.fragments.PulseSettings" />
-    </PreferenceCategory>
+    <com.superior.support.preferences.SystemSettingSwitchPreference android:key="enable_ripple_effect" android:title="@string/lock_screen_fingerprint_ripple_title" android:summary="@string/lock_screen_fingerprint_ripple_summary" android:defaultValue="true"/>
+    <com.superior.support.preferences.SecureSettingSwitchPreference android:key="enable_lockscreen_quick_settings" android:title="@string/lockscreen_quick_setting_title" android:summary="@string/lockscreen_quick_setting_summary" android:defaultValue="true"/>
+    <com.superior.support.preferences.SystemSettingSwitchPreference android:key="lockscreen_enable_power_menu" android:title="@string/lockscreen_enable_power_menu_title" android:summary="@string/lockscreen_enable_power_menu_summary" android:defaultValue="true"/>
+  </PreferenceCategory>
+  <PreferenceCategory android:key="lock_screen_interface_category" android:title="@string/lock_screen_interface_category">
+    <!-- Lockscreen media art -->
+    <com.superior.support.preferences.SystemSettingSwitchPreference android:key="ls_media_art_enabled" android:title="@string/ls_media_art_title" android:summary="@string/ls_media_art_summary" android:defaultValue="false"/>
+    <com.superior.support.preferences.SystemSettingListPreference android:key="ls_media_art_filter" android:title="@string/ls_media_art_filter_title" android:entries="@array/ls_media_art_filter_entries" android:entryValues="@array/ls_media_art_filter_values" android:dependency="ls_media_art_enabled" android:defaultValue="0"/>
+    <com.superior.support.preferences.SystemSettingSeekBarPreference android:key="ls_media_art_fade_level" android:title="@string/ls_media_art_fade_level_title" android:summary="@string/ls_media_art_fade_level_summary" android:defaultValue="40" settings:interval="1" settings:units="%" android:max="100" android:min="0" android:dependency="ls_media_art_enabled"/>
+    <com.superior.support.preferences.SystemSettingSeekBarPreference android:key="ls_media_art_blur_level" android:title="@string/ls_media_art_blur_level_title" android:summary="@string/ls_media_art_blur_level_summary" android:max="600" android:min="0" android:defaultValue="200" android:dependency="ls_media_art_enabled"/>
+    <!-- Pulse music visualizer -->
+    <Preference android:key="pulse_settings" android:title="@string/pulse_settings_title" android:summary="@string/pulse_settings_summary" android:fragment="com.superior.lab.fragments.PulseSettings"/>
+  </PreferenceCategory>
 </PreferenceScreen>
